@@ -6,27 +6,28 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
     <div class="wrapper">
         <header>
             <h1>Element Orientation</h1>
             <h2>A Practical Example</h2>
         </header>
         <div class="main">
-            <img src="http://www.fillmurray.com/200/300" alt="fillmurray">
+            <img src="http://www.fillmurray.com/200/300" alt="fillmurray" width="200" height="300">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam libero quam, sagittis non tellus accumsan, ultricies vehicula felis. Proin quis nulla sed eros tristique porta. Vestibulum magna orci, aliquam eget eleifend ac, congue et libero. Mauris ultrices lorem porttitor erat mattis, eget mattis risus tincidunt. Fusce vitae erat nec diam eleifend dapibus ut non quam. Sed luctus enim in ligula aliquet hendrerit. Vestibulum facilisis pharetra erat, nec porttitor enim tincidunt vitae. Quisque pellentesque ex in diam elementum, at varius dolor aliquam.</p>
             <p>Mauris a faucibus sem, vitae tincidunt libero. Quisque vulputate, lectus quis pulvinar maximus, urna lacus cursus neque, et posuere tellus enim at est. Nullam eu sapien tellus. Fusce sed risus est. Cras efficitur luctus consequat. Praesent molestie sem eu justo bibendum elementum. Ut consectetur, nisi quis volutpat convallis, odio felis elementum nulla, eget auctor diam enim tristique ante. Curabitur non odio id purus mattis iaculis ut quis libero.</p>
-            <img src="http://www.fillmurray.com/150/100" alt="fillmurray">
+            <img src="http://www.fillmurray.com/150/100" alt="fillmurray" width="150" height="100">
             <p>Sed vel pulvinar justo. Aliquam erat volutpat. Nam eu dui non nunc sagittis mollis vitae sed ante. Suspendisse malesuada rhoncus ante, vel dignissim leo feugiat eu. Sed ex arcu, pharetra id finibus ut, pretium at velit. In porttitor finibus risus, sed feugiat tellus pretium nec. Aliquam eget sapien ac velit dapibus sollicitudin sit amet lobortis ligula. Etiam ex erat, pulvinar non augue eget, eleifend lacinia tortor. Integer interdum iaculis turpis, id consequat lacus gravida ut. Sed ante metus, pretium ultricies augue posuere, sodales sagittis dui. Integer vel velit posuere, laoreet nunc sit amet, mollis nulla. Curabitur sed sollicitudin mauris, at faucibus nisi.</p>
-            <img src="http://www.fillmurray.com/300/300" alt="fillmurray">
+            <img src="http://www.fillmurray.com/300/300" alt="fillmurray" width="300" height="300">
             <p>Nullam posuere turpis mauris, porttitor porta ex tincidunt sed. Sed sit amet purus ut metus faucibus dignissim id non felis. Fusce erat nulla, iaculis vel libero nec, interdum tempor diam. Nam at quam dapibus, volutpat purus facilisis, volutpat massa. Aliquam pharetra, dolor vitae gravida facilisis, augue diam egestas urna, ut feugiat sem ex id ante. Mauris dolor elit, rutrum egestas lacus nec, fringilla imperdiet ligula. Suspendisse elementum ex ac porttitor convallis. Fusce orci velit, mattis non iaculis sit amet, iaculis consectetur tellus. Curabitur vel magna at nisl varius consectetur. Morbi vehicula fermentum nulla at feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In a augue congue, facilisis lacus nec, consequat lacus. Sed volutpat, dolor et commodo rhoncus, diam odio condimentum tellus, eget fringilla odio massa eget nulla.</p>
             <p>Nunc non ex vel diam sagittis consectetur. Maecenas vitae eleifend ante. Donec vestibulum erat iaculis elit vestibulum porttitor. Maecenas hendrerit libero et erat laoreet ullamcorper. Nam in ligula ante. Nam a turpis bibendum, tempus turpis nec, facilisis orci. Etiam urna dolor, iaculis non luctus eu, tincidunt ac arcu. Fusce auctor viverra rutrum. Sed vitae placerat enim, ut condimentum mauris. Aenean nibh sapien, gravida sit amet sapien vitae, fermentum ullamcorper tellus.</p>
         </div>
         <footer>&copy; Jon Z.</footer>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/main.src.js"></script>
     <script>
+        // javascript examples
         Orientation(document.querySelector('.wrapper')).getOrientation({
             classPrefix: 'JOM-',
             layoutType: 'offset',
@@ -34,6 +35,9 @@
         });
 
         Orientation(document.querySelector('body')).getOrientation();
+
+        // jquery examples
+        $('img').getOrientation();
     </script>
 </body>
 </html>

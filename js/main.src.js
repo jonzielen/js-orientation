@@ -1,4 +1,12 @@
 (function() {
+    // test for jquery, add method
+    if (typeof jQuery !== 'undefined') {
+        $.fn.getOrientation = function(options) {
+            Orientation(this[0]).getOrientation(options);
+        };
+    }
+
+    // plugin
     this.Orientation = function(elem) {
         var settings = {
             classPrefix: '',

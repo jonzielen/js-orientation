@@ -10,3 +10,22 @@ settings = {
     layoutType: 'client' // can be 'client' (clientWidth/clientHeight) or 'offset' (offsetWidth/offsetHeight)
 };
 ```
+
+Pure Javascript Example:
+
+```
+<script>
+    Orientation(document.querySelector('.wrapper')).getOrientation({
+        classPrefix: 'jon-',
+        layoutType: 'offset',
+        verticalClass: 'vert'
+    });
+
+    Orientation(document.querySelector('.wrapper')).getOrientation();
+</script>
+```
+
+With jquery:
+```
+$('img').getOrientation();
+```
