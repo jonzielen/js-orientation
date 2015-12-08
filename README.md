@@ -27,5 +27,7 @@ Pure Javascript Example:
 
 With jquery:
 ```
-$('img').getOrientation();
+$('img').getOrientation({
+    classPrefix: 'img-',
+});
 ```

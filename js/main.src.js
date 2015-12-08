@@ -2,7 +2,9 @@
     // test for jquery, add method
     if (typeof jQuery !== 'undefined') {
         $.fn.getOrientation = function(options) {
-            Orientation(this[0]).getOrientation(options);
+            for (var i = 0; i < this.length; i++) {
+                Orientation(this[i]).getOrientation(options);
+            }
         };
     }
 

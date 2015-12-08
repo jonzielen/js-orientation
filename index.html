@@ -37,7 +37,9 @@
         Orientation(document.querySelector('body')).getOrientation();
 
         // jquery examples
-        $('img').getOrientation();
+        $('img').getOrientation({
+            classPrefix: 'img-',
+        });
     </script>
 </body>
 </html>
