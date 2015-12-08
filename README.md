@@ -4,7 +4,10 @@ Default Settings:
 
 settings = {
     classPrefix: '', // optional prefix for classes
+
     verticalClass: 'landscape',
+
     horizontalClass: 'portrait',
+    
     layoutType: 'client' // can be 'client' (clientWidth/clientHeight) or 'offset' (offsetWidth/offsetHeight)
 };
