@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, helvetica;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+}
+img {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+img:nth-of-type(2) {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+.wrapper {
+    width: 770px;
+    margin: 15px auto;
+    padding: 15px;
+    border: solid 1px #000;
+    border-radius: 6px;
+    background-color: #eee;
+}
+footer {
+    text-align: center;
+}
